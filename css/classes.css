@@ -74,6 +74,9 @@ main {
   margin: 1em;
   padding: 1em;
 }
+#payments label {
+  background-color: #fff;
+}
 /*booking*/
 .booking {
   min-width: 50%;
@@ -99,4 +102,16 @@ main {
   font-size: 2.5em;
   padding: 0.25em;
   cursor: pointer;
+}
+.bookedClass {
+  min-width: 70%;
+}
+.bookedClass div.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookedClass div.col p {
+  margin: auto;
+  text-align: center;
 }

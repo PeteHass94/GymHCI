@@ -29,7 +29,7 @@
           <span class="navbar-text">
             <i class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i><i class="fab fa-facebook-square"></i>
           </span>
-          <a class="nav-item nav-link active" href="profile.html"><i class="fas fa-user"></i>Profile <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="#"><i class="fas fa-user"></i>Profile <span class="sr-only">(current)</span></a>
         </div>
       </div>
     </nav>
@@ -81,20 +81,108 @@
       <div class="bookedClass">
         <h1>Booked Classes</h1>
         <p>Click <i class="far fa-times-circle" style="margin-right: 0;"></i> to cancel</p>
-        <ul class="list-group">
+        <ul class="list-group container-fluid">
           <li class="list-group-item d-flex justify-content-between align-items-center">
-            Cras justo odio
-            <span class="badge badge-primary badge-pill"><i class="far fa-times-circle"></i></span>
+            <div class="col">
+              <p>Dumbbell Class</p>
+            </div>
+            <div class="col">
+              <p>Monday</p>
+            </div>
+            <div class="col">
+              <p>9am-10am</p>
+            </div>
+            <div class="col">
+              <span class="badge badge-primary badge-pill"><i class="far fa-times-circle"></i></span>
+            </div>
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-center">
-            Dapibus ac facilisis in
-            <span class="badge badge-primary badge-pill">2</span>
+            <div class="col">
+              <p>Abs Class</p>
+            </div>
+            <div class="col">
+              <p>Wednesday</p>
+            </div>
+            <div class="col">
+              <p>12pm-1pm</p>
+            </div>
+            <div class="col">
+              <span class="badge badge-primary badge-pill"><i class="far fa-times-circle"></i></span>
+            </div>
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-center">
-            Morbi leo risus
-            <span class="badge badge-primary badge-pill">1</span>
+            <div class="col">
+              <p>Circuits Class</p>
+            </div>
+            <div class="col">
+              <p>Friday</p>
+            </div>
+            <div class="col">
+              <p>6pm-7pm</p>
+            </div>
+            <div class="col">
+              <span class="badge badge-primary badge-pill"><i class="far fa-times-circle"></i></span>
+            </div>
           </li>
         </ul>
+        <hr>
+        <button type="button" class="btn btn-success" onclick="window.location.href='./classes.html'"><i class="far fa-hand-pointer"></i>Book A Class</button>
+      </div>
+
+      <!--sourced https://getbootstrap.com/docs/4.0/examples/checkout/ -->
+      <div class="container" id="payments">
+        <h4>Payment</h4>
+          <form class="needs-validation" action="index.html" method="post" novalidate>
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Credit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Debit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="paypal">Paypal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+          </form>
+        <button class="btn btn-primary" onClick="">Confirm</button>
       </div>
 
     </main>
