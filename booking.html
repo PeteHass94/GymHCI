@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- reset to default css standards -->
+    <link href="./css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./css/allfontawesome.css" type="text/css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- add individual css -->
+    <link href="./css/gym.css" type="text/css" rel="stylesheet">
+    <link href="./css/classes.css" type="text/css" rel="stylesheet">
+    <title>Pete's Gym Landing Page</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+      <h1 class="navbar-brand" href="#"><span>PG</span></h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="classes.html">Classes</a>
+          <a class="nav-item nav-link" href="equipment.html">Equipment</a>
+          <a class="nav-item nav-link" href="team.html">Team</a>
+          <a class="nav-item nav-link" href="pricing.html">Pricing</a>
+          <span class="navbar-text">
+            <i class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i><i class="fab fa-facebook-square"></i>
+          </span>
+          <a class="nav-item nav-link" href="profile.html"><i class="fas fa-user"></i>Profile</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <h1>Booking Form</h1>
+      <h3>Booking the class you want</h3>
+      <div class="wtvideo">
+        <div class="card">
+          <div class="card-header">
+            Check out the class
+          </div>
+          <div class="card-body">
+            <video class="video" autoplay loop muted>
+              <source src="./media/workout.mp4"  alt="https://www.pexels.com/video/people-working-out-992715/" type="video/mp4"/>
+            </video>
+          </div>
+          <div class="card-footer text-muted">
+            Video of Gym from <a href="www.pexels.com/video/people-working-out-992715/">pexels.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="booking">
+        <form>
+          <div class="form-group row">
+            <label class="col col-form-label" for="exampleFormControlSelect1">Class Name</label>
+            <select class="col form-control" id="exampleFormControlSelect1">
+              <option>Please Select Class Name</option>
+              <option>Dumbbell Class</option>
+              <option>Abs Class</option>
+              <option>Circuit Class</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label class="col col-form-label" for="exampleFormControlSelect1">Class Day</label>
+            <select class="col form-control" id="exampleFormControlSelect1">
+              <option>Please Select Class Day</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label class="col col-form-label" for="exampleFormControlSelect1">Class Time</label>
+            <select class="col form-control" id="exampleFormControlSelect1">
+              <option>Please Select Class Time</option>
+              <option>9am - 10am</option>
+              <option>12pm - 1pm</option>
+              <option>6pm - 7pm</option>
+            </select>
+          </div>
+          <div class="form-group row">
+            <label class="col col-form-label" for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+            <div class="col form-control">
+              <input type="name" class="form-control" id="inputEmail3" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col col-form-label">Membership Number</label>
+            <div class="col form-control">
+              <input type="number" class="form-control" id="inputEmail3" placeholder="Membership No.">
+            </div>
+          </div>
+          <fieldset class="form-group">
+            <div class="row">
+              <label class="col-form-label col pt-0">Verify</label>
+              <div class="col verify form-control">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Yes - Membership Valid
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    No - Membership not Valid
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-success" onclick()=""><i class="far fa-hand-pointer"></i>Book</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="email">
+        <p>Best Gym Ever</p>
+        <a href="mailto:PetesGym@mail.com?Subject=Join%20now" target="_top">PetesGym@mail.com</a>
+      </div>
+      <div class="address">
+        <p><i class="far fa-map-marked-alt"></i>1 Dublin Rd, Enniskillen BT74 6HQ</p>
+        <p><i class="fas fa-phone-square"></i>+44 123456789</p>
+      </div>
+      <div class="social">
+        <span class="footer-text">
+          <i class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i><i class="fab fa-facebook-square"></i>
+        </span>
+      </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="./js/main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
