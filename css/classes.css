@@ -1,0 +1,76 @@
+main {
+  padding: 0.5em 0 0.5em 0;
+}
+.day {
+  margin: 1em 1em 0 1em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #5588A3;
+}
+.card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 15em;
+  background-color: #5588A3;
+}
+.card-body {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-body h5, .card-body p {
+
+  margin: auto auto auto 0;
+}
+
+.card-img {
+  width: 75%;
+  margin: auto;
+}
+.card .image p {
+ color: #fff;
+}
+
+/*video*/
+.wtvideo .card-header {
+  display: flex;
+  justify-content: center;
+}
+.wtvideo video{
+  height: 25em;
+}
+/*contactUs*/
+.contactUs {
+  margin: 1em;
+  width: 100%;
+}
+.details{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.details .address {
+  margin-left: 1em;
+}
+
+/*prices*/
+.badge {
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background-color: #5588A3;
+  justify-content: center;
+}
+.pricing .card-body, .pricing .card-body h5, .pricing .card-body  p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+#payments {
+  background-color: #fff;
+  margin: 1em;
+  padding: 1em;
+}
